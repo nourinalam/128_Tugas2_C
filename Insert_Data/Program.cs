@@ -19,7 +19,7 @@ namespace Insert_Data
             SqlConnection con = null;
             try
             {
-                con = new SqlConnection("data source =LAPTOP-8JHE7APE\\ALAM;database=Toko_Bakery_Alam;UserID-sa;password=123456");
+                con = new SqlConnection("data source = LAPTOP-8JHE7APE\\ALAM;database = Toko_Bakery_Alam;User ID=sa;password=123456");
                 con.Open();
 
                 SqlCommand cm = new SqlCommand("insert into Kasir(Id_Kasir, Nama_Kasir, Jenis_Kelamin) values('K01', 'Nourin', 'L')"
@@ -44,11 +44,11 @@ namespace Insert_Data
                     + "insert into Produk(Id_Produk, Nama_Produk, Stok) values('P05', 'Lapis', '3')"
 
                     //insert data pada tabel transaksi
-                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX01', '12-02-2025', '5','5000','Tunai','K01','C01','P01')"
-                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX02', '23-01-2024', '10','20000','Debit','K02','C02','P02')"
-                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX03', '03-09-2020', '7','28000','Debit','K03','C03','P03')"
-                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX04', '11-12-2024', '2','6000','Tunai','K04','C04','P04')"
-                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX05', '28-04-2023', '1','2000','Tunai','K05','C05','P05')",
+                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX01', '2025-12-02', '5','5000','Tunai','K01','C01','P01')"
+                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX02', '2025-12-02', '10','20000','Debit','K02','C02','P02')"
+                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX03', '2025-12-02', '7','28000','Debit','K03','C03','P03')"
+                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX04', '2025-12-02', '2','6000','Tunai','K04','C04','P04')"
+                    + "insert into Transaksi(Id_Transaksi, Tanggal_Transaksi, Jumlah_Kue, Total_Pembayaran, Jenis_Pembayaran, Id_Kasir, Id_Customer, Id_Produk) values('TRX05', '2025-12-02', '1','2000','Tunai','K05','C05','P05')",
 
                     con);
                 cm.ExecuteNonQuery();
