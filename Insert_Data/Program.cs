@@ -26,9 +26,14 @@ namespace Insert_Data
                     + "insert into Kasir(Id_Kasir, Nama_Kasir, Jenis_Kelamin) values ('K02', 'Alam', 'L')"
                     + "insert into Kasir(Id_Kasir, Nama_Kasir, Jenis_Kelamin) values ('K03', 'Adzani', 'L')"
                     + "insert into Kasir(Id_Kasir, Nama_Kasir, Jenis_Kelamin) values ('K04', 'Putri', 'P')"
-                    + "insert into Kasir(Id_Kasir, Nama_Kasir, Jenis_Kelamin) values ('K05', 'Sindi', 'P')",
+                    + "insert into Kasir(Id_Kasir, Nama_Kasir, Jenis_Kelamin) values ('K05', 'Sindi', 'P')"
 
-                    
+                    + "insert into Customer(Id_Customer, Nama_Customer, Jenis_Kelamin, No_Telp) values('C01', 'Arip', 'L', '0897636478362')"
+                    + "insert into Customer(Id_Customer, Nama_Customer, Jenis_Kelamin, No_Telp) values('C02', 'Sinta', 'P', '0897634678007')"
+                    + "insert into Customer(Id_Customer, Nama_Customer, Jenis_Kelamin, No_Telp) values('C03', 'Jamal', 'L', '0892336478645')"
+                    + "insert into Customer(Id_Customer, Nama_Customer, Jenis_Kelamin, No_Telp) values('C04', 'Dobleh', 'L', '0898936478300')"
+                    + "insert into Customer(Id_Customer, Nama_Customer, Jenis_Kelamin, No_Telp) values('C05', 'Intan', 'P', '0896736478895')",
+
                     con);
                 cm.ExecuteNonQuery();
 
